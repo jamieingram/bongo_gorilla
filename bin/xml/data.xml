@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<config>
+		<item type="bool" id="debug_enabled">false</item>
+		<item type="str" id="assets_base"><![CDATA[]]></item>
+		<item type="str" id="skins_dir"><![CDATA[assets/swf/]]></item>
+	</config>
+	<strings>
+	</strings>
+	<fonts>
+		
+	</fonts>
+</data>
