@@ -17,6 +17,7 @@ package uk.co.flumox.utils {
 		public static const CONFIG_DEBUG_ENABLED:String = "debug_enabled";		public static const CONFIG_ASSETS_BASE:String = "assets_base";
 		public static const CONFIG_SKINS_DIR:String = "skins_dir";
 		public static const CONFIG_SETTINGS_URL:String = "config_url";
+        public static const CONFIG_MAX_VOL:String = "max_vol";
 		//
 		public static const SKIN_MAIN:String = "skin_main.swf";
 		//	}
