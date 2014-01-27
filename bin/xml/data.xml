@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
 	<config>
-		<item type="bool" id="debug_enabled">true</item>
+		<item type="bool" id="debug_enabled">false</item>
 		<item type="str" id="assets_base"><![CDATA[]]></item>
 		<item type="str" id="skins_dir"><![CDATA[assets/swf/]]></item>
+		<item type="int" id="min_vol"><![CDATA[10]]></item>
 		<item type="int" id="max_vol"><![CDATA[50]]></item>
 	</config>
 	<strings>
