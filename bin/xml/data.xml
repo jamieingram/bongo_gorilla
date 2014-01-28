@@ -6,6 +6,8 @@
 		<item type="str" id="skins_dir"><![CDATA[assets/swf/]]></item>
 		<item type="int" id="min_vol"><![CDATA[10]]></item>
 		<item type="int" id="max_vol"><![CDATA[50]]></item>
+		<item type="int" id="full_width"><![CDATA[2048]]></item>
+		<item type="int" id="full_height"><![CDATA[768]]></item>
 	</config>
 	<strings>
 	</strings>

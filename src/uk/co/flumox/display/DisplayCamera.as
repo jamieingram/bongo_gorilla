@@ -4,6 +4,7 @@ package uk.co.flumox.display {
     import flash.media.Camera;
     import flash.media.Video;
     
+    import uk.co.flumox.data.DataConfigManager;
     import uk.co.flumox.utils.Defines;
     import uk.co.flumox.utils.SkinManager;
     
@@ -33,8 +34,12 @@ package uk.co.flumox.display {
         }
         //
         protected override function onAddedToStage($event:Event = null):void {
-            _video.height = Defines.FULL_HEIGHT_INT;
-            _video.width = Defines.FULL_WIDTH_INT * 0.5;
+            var height_int:int = DataConfigManager.GET_INSTANCE().getConfigInt(Defines.CONFIG_FULL_HEIGHT);
+            if  (height_int == 0) height_int = Defines.FULL_HEIGHT_INT;
+            var width_int:int = DataConfigManager.GET_INSTANCE().getConfigInt(Defines.CONFIG_FULL_WIDTH);
+            if  (width_int == 0) width_int = Defines.FULL_WIDTH_INT;
+            _video.height = height_int;
+            _video.width = width_int * 0.5;
             //flip the video
             _video.scaleX = -_video.scaleX;
             _video.x += _video.width;
