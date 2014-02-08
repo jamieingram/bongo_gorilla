@@ -2,6 +2,7 @@ package uk.co.flumox.data {
 	import com.carlcalderon.arthropod.Debug;
 	
 	import flash.net.URLLoader;
+	import flash.system.Capabilities;
 	
 	import org.osflash.signals.Signal;
 	
@@ -16,8 +17,12 @@ package uk.co.flumox.data {
 	 * @author jamieingram
 	 */
 	public class DataManager {
-		public var initialLoadCompleteSignal:Signal;		public var terminalErrorSignal:Signal;
-		public var itemLoadedSignal:Signal;			//		protected var _numItemsToLoad_int:int;
+
+		public var initialLoadCompleteSignal:Signal;
+		public var terminalErrorSignal:Signal;
+		public var itemLoadedSignal:Signal;	
+		//
+		protected var _numItemsToLoad_int:int;
 		protected var _numItemsLoaded_int:int;
 		//
 		public function DataManager() {
@@ -25,10 +30,13 @@ package uk.co.flumox.data {
 		}
 		//
 		protected function init():void {
-			initialLoadCompleteSignal = new Signal();			terminalErrorSignal = new Signal(String);			//
+			initialLoadCompleteSignal = new Signal();
+			terminalErrorSignal = new Signal(String);
+			//
 			//we have to load the config and skin swf - include these in the count initially
 			_numItemsToLoad_int = 2;
-			//			_numItemsLoaded_int = 0;
+			//
+			_numItemsLoaded_int = 0;
 			itemLoadedSignal = new Signal();
 			//
 		}
@@ -38,6 +46,9 @@ package uk.co.flumox.data {
 		}
 		//
 		private function loadConfigData():void {
+			var isAir:Boolean = (Capabilities.playerType == "Desktop");
+			var isFlashPlayer:Boolean = (Capabilities.playerType == "StandAlone");
+			//
 			var config:DataConfigManager = DataConfigManager.GET_INSTANCE();
 			var configXML_str:String = config.getConfigString(Defines.CONFIG_SETTINGS_URL);
 			if(configXML_str.substr(0,4).toLowerCase() == "http") configXML_str += "?r=" + String(Math.random());

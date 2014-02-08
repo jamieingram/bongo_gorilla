@@ -14,9 +14,14 @@ package uk.co.flumox.utils {
 		public static const FULL_WIDTH_INT:int = 1024;
 		public static const FULL_HEIGHT_INT:int = 384;
 		//
-        public static const CONFIG_FULL_WIDTH:String = "full_width";
-        public static const CONFIG_FULL_HEIGHT:String = "full_height";
-		public static const CONFIG_DEBUG_ENABLED:String = "debug_enabled";		public static const CONFIG_ASSETS_BASE:String = "assets_base";
+        public static const CONFIG_CAMERA_X:String = "camera_x";
+        public static const CONFIG_CAMERA_Y:String = "camera_y";
+        public static const CONFIG_CAMERA_WIDTH:String = "camera_width";
+        public static const CONFIG_GORILLA_X:String = "gorilla_x";
+        public static const CONFIG_GORILLA_Y:String = "gorilla_y";
+        public static const CONFIG_GORILLA_WIDTH:String = "gorilla_width";
+		public static const CONFIG_DEBUG_ENABLED:String = "debug_enabled";
+		public static const CONFIG_ASSETS_BASE:String = "assets_base";
 		public static const CONFIG_SKINS_DIR:String = "skins_dir";
 		public static const CONFIG_SETTINGS_URL:String = "config_url";
         public static const CONFIG_MAX_VOL:String = "max_vol";
@@ -24,5 +29,6 @@ package uk.co.flumox.utils {
 		//
 		public static const SKIN_MAIN:String = "skin_main.swf";
 		//
-        public static const LETTER_A:int = 97;	}
+        public static const LETTER_A:int = 97;
+	}
 }

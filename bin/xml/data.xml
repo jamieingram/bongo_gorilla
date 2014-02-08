@@ -6,8 +6,12 @@
 		<item type="str" id="skins_dir"><![CDATA[assets/swf/]]></item>
 		<item type="int" id="min_vol"><![CDATA[10]]></item>
 		<item type="int" id="max_vol"><![CDATA[50]]></item>
-		<item type="int" id="full_width"><![CDATA[2048]]></item>
-		<item type="int" id="full_height"><![CDATA[768]]></item>
+		<item type="int" id="camera_x"><![CDATA[0]]></item>
+		<item type="int" id="camera_y"><![CDATA[0]]></item>
+		<item type="int" id="camera_width"><![CDATA[150]]></item>
+		<item type="int" id="gorilla_x"><![CDATA[150]]></item>
+		<item type="int" id="gorilla_y"><![CDATA[0]]></item>
+		<item type="int" id="gorilla_width"><![CDATA[800]]></item>
 	</config>
 	<strings>
 	</strings>
