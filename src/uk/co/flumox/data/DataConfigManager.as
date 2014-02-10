@@ -1,9 +1,9 @@
 package uk.co.flumox.data {
 	import com.carlcalderon.arthropod.Debug;
 	
-	import flash.utils.describeType;
 	import flash.net.SharedObject;
-
+	import flash.utils.describeType;
+	
 	import uk.co.flumox.utils.Defines;
 
 	/**
@@ -119,7 +119,7 @@ package uk.co.flumox.data {
 		
 		public function getConfigNumber($id_str:String):Number {
 			var value_num:Number = Number(_config_obj[$id_str]);
-			if (!value_num){
+			if (isNaN(value_num)){
 				Debug.log("DataConfigManager.getConfigNumber : no config value found for "+$id_str);
 			}
 			return value_num;

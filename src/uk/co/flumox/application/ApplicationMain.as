@@ -3,7 +3,9 @@ package uk.co.flumox.application {
 	import com.carlcalderon.arthropod.Debug;
 	
 	import flash.display.LoaderInfo;
+	import flash.display.MovieClip;
 	import flash.display.Sprite;
+	import flash.events.Event;
 	
 	import org.osflash.signals.Signal;
 	
@@ -18,8 +20,9 @@ package uk.co.flumox.application {
 	 * 
 	 * @author jamieingram
 	 */
-	public class ApplicationMain extends Sprite implements IApplication {
+	public class ApplicationMain extends MovieClip implements IApplication {
 		
+        public static var IS_GORILLA_BOOL:Boolean = false;
 		private static var _INSTANCE:ApplicationMain;
 		//
 		public var lastNavigateTo_str:String;
@@ -32,10 +35,10 @@ package uk.co.flumox.application {
 		private var _dataManager:DataManager;
 		private var _displayManager:DisplayManager;
 		
-		public function ApplicationMain() {
+		public function ApplicationMain($isGorilla_bool:Boolean = false) {
 			super();
+            IS_GORILLA_BOOL = $isGorilla_bool;
 			_INSTANCE = this;
-			init();
 		}
 		
 		public static function GET_INSTANCE():ApplicationMain {
@@ -48,7 +51,7 @@ package uk.co.flumox.application {
 		//
 		/**** INITIAL CALLS *****/
 		//
-		private function init():void {
+		public function init():void {
 			//
 			_initialLoadCompleteSignal = new Signal();
 			_loadProgressSignal = new Signal(Number);

@@ -14,6 +14,8 @@ package uk.co.flumox.utils {
 		public static const FULL_WIDTH_INT:int = 1024;
 		public static const FULL_HEIGHT_INT:int = 384;
 		//
+        public static const CONFIG_FORCED_SCREEN_WIDTH:String = "forced_screen_width";
+        public static const CONFIG_FORCED_SCREEN_HEIGHT:String = "forced_screen_height";
         public static const CONFIG_CAMERA_X:String = "camera_x";
         public static const CONFIG_CAMERA_Y:String = "camera_y";
         public static const CONFIG_CAMERA_WIDTH:String = "camera_width";
@@ -30,5 +32,6 @@ package uk.co.flumox.utils {
 		public static const SKIN_MAIN:String = "skin_main.swf";
 		//
         public static const LETTER_A:int = 97;
+        public static const LETTER_F:int = 102;
 	}
 }
