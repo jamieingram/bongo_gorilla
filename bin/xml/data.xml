@@ -10,7 +10,7 @@
 		<item type="int" id="forced_screen_height"><![CDATA[768]]></item>
 		<item type="int" id="camera_x"><![CDATA[0]]></item>
 		<item type="int" id="camera_y"><![CDATA[0]]></item>
-		<item type="int" id="camera_width"><![CDATA[400]]></item>
+		<item type="int" id="camera_width"><![CDATA[480]]></item>
 		<item type="int" id="gorilla_x"><![CDATA[0]]></item>
 		<item type="int" id="gorilla_y"><![CDATA[0]]></item>
 		<item type="int" id="gorilla_width"><![CDATA[800]]></item>

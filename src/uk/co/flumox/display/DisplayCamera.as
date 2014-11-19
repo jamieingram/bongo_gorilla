@@ -31,10 +31,10 @@ package uk.co.flumox.display {
             //
             positionSignal = new Signal(Number,Number);
             //
-            _video = new Video(320,240);
-            _video.smoothing = true;
+            _video = new Video(480, 270);
+            //_video.smoothing = true;
             var camera:Camera = Camera.getCamera(); 
-            camera.setMode(320,240,12);
+            camera.setMode(1920,1080,12);
             if (camera != null) {
                 _video.attachCamera(camera);
             }
